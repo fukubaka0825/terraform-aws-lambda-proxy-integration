@@ -6,7 +6,8 @@ terraform 0.12.0+
 
 ```hcl
 module "sample_api"{
-  source = "../"
+  source  = "fukubaka0825/lambda-proxy-integration/aws"
+  version = "1.0.0"
   apigw_name = "sample-api"
   function_name = "sample-api"
   lambda_role = module.lambda_role.iam_role_arn

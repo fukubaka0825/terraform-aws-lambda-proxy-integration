@@ -10,10 +10,12 @@ provider "aws" {
 }
 
 
-module "search_api" {
-  source        = "../"
-  apigw_name    = "sample-search-api"
-  function_name = "sample-search-api"
+module "sample_api" {
+  source  = "fukubaka0825/lambda-proxy-integration/aws"
+  version = "1.0.0"
+
+  apigw_name    = "sample-api"
+  function_name = "sample-api"
   lambda_role   = module.lambda_role.iam_role_arn
 
   // The repo's name and object key where source code artifact exists
