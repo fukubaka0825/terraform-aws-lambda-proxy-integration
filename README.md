@@ -1,5 +1,5 @@
 # A module that creates an API Gateway Proxy And Lambda with S3 repo's artifact.
-Current stable version: 1.0.0
+Current stable version: 1.0.2
 ## required version
 terraform 0.12.0+
 ## Call me like this:
@@ -7,7 +7,7 @@ terraform 0.12.0+
 ```hcl
 module "sample_api"{
   source  = "fukubaka0825/lambda-proxy-integration/aws"
-  version = "1.0.0"
+  version = "1.0.2"
   apigw_name = "sample-api"
   function_name = "sample-api"
   lambda_role = module.lambda_role.iam_role_arn

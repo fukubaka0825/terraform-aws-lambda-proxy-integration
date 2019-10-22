@@ -12,7 +12,7 @@ provider "aws" {
 
 module "sample_api" {
   source  = "fukubaka0825/lambda-proxy-integration/aws"
-  version = "1.0.0"
+  version = "1.0.2"
 
   apigw_name    = "sample-api"
   function_name = "sample-api"
