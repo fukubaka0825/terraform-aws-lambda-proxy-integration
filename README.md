@@ -1,5 +1,6 @@
 # A module that creates an API Gateway Proxy And Lambda with S3 repo's artifact.
 Current stable version: 1.0.2
+REF: https://registry.terraform.io/modules/fukubaka0825/lambda-proxy-integration/aws/1.0.2
 ## required version
 terraform 0.12.0+
 ## Call me like this:
